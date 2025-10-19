@@ -11,7 +11,7 @@ class Ytrss < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lsherman98/yt-rss-cli/releases/download/v1.0.0/yt-rss-cli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "13e238896bf945b9d463c752a7aa79e268d2c26b501201ff00a473863b0a4502"
+      sha256 "e61529563c4cb6574b4548308d1ee24f03e07f640d2f9db069891c1a93ad57a4"
 
       def install
         bin.install "ytrss"
@@ -19,7 +19,7 @@ class Ytrss < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lsherman98/yt-rss-cli/releases/download/v1.0.0/yt-rss-cli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "ef34c2bd4fef42d6f67d9c934e306684b02daf1a334a70005c0366b6a0e686d7"
+      sha256 "b33936007075c8228d36f64ae14c735828d5eaacd85be48cc0138e17ceca3731"
 
       def install
         bin.install "ytrss"
@@ -30,14 +30,14 @@ class Ytrss < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/lsherman98/yt-rss-cli/releases/download/v1.0.0/yt-rss-cli_1.0.0_linux_amd64.tar.gz"
-      sha256 "587e8d4b5cbb86a16c4d715bc478816e6e488afbcb431ee1054de96fb2300e26"
+      sha256 "298f18d72396e4196cc387698925716f39a74c1892e7fa475b2d1a029c2e2848"
       def install
         bin.install "ytrss"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/lsherman98/yt-rss-cli/releases/download/v1.0.0/yt-rss-cli_1.0.0_linux_arm64.tar.gz"
-      sha256 "b21a6a259d3fca3c41dece22027600ce0aa2c672563aacab9bf7fbe30f9d713e"
+      sha256 "d88e9affd8da713f7e7c641d30f3df0d5cd7bea970f5cd541865ef3026fe6874"
       def install
         bin.install "ytrss"
       end
