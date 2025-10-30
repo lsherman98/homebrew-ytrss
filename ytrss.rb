@@ -5,21 +5,21 @@
 class Ytrss < Formula
   desc "A CLI tool to get RSS feeds for YouTube channels and playlists."
   homepage "https://github.com/lsherman98/ytrss-cli"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lsherman98/ytrss-cli/releases/download/v1.0.0/ytrss-cli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "8b83e1e72e9fa34cd26b6ab4d7a83930b052f07cf86556b84ae5247cee59643e"
+      url "https://github.com/lsherman98/ytrss-cli/releases/download/v1.0.1/ytrss-cli_1.0.1_darwin_amd64.tar.gz"
+      sha256 "c99424a900450661786324c480d42954338f99affd29051cc96e3ed6af108cdb"
 
       def install
         bin.install "ytrss"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lsherman98/ytrss-cli/releases/download/v1.0.0/ytrss-cli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "212577131d025eae5826346b097d683c6e1816bcb6a94d94b32e6e615ec0536e"
+      url "https://github.com/lsherman98/ytrss-cli/releases/download/v1.0.1/ytrss-cli_1.0.1_darwin_arm64.tar.gz"
+      sha256 "113e86ba9d7feb7f6eb789786426fae8891345cbd0b752282df0ffa4fdb94b8b"
 
       def install
         bin.install "ytrss"
@@ -29,15 +29,15 @@ class Ytrss < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lsherman98/ytrss-cli/releases/download/v1.0.0/ytrss-cli_1.0.0_linux_amd64.tar.gz"
-      sha256 "403b6f13730769b9309d17b3e583f43988e16509f907fc74a2ad2a61ef6ba8bf"
+      url "https://github.com/lsherman98/ytrss-cli/releases/download/v1.0.1/ytrss-cli_1.0.1_linux_amd64.tar.gz"
+      sha256 "9a41cb13ab0954c773c54d1115262818d63d1c4d6ed17a1c7676a3cb41f12ee7"
       def install
         bin.install "ytrss"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lsherman98/ytrss-cli/releases/download/v1.0.0/ytrss-cli_1.0.0_linux_arm64.tar.gz"
-      sha256 "ae474ddb1a3bb7c8c9a5e452dbd01c70e5681b4099878b38e0200c80e038cdbc"
+      url "https://github.com/lsherman98/ytrss-cli/releases/download/v1.0.1/ytrss-cli_1.0.1_linux_arm64.tar.gz"
+      sha256 "3160764384bbbdf84b26dc1034d23b4a4a3092d382b2b77ac68e7a56a9e61207"
       def install
         bin.install "ytrss"
       end
